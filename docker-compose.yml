@@ -4,7 +4,7 @@ services:
   mongo:
     image: mongo:4.4
     volumes:
-      - ${NS_MONGO_DATA_DIR:-./mongo-data}:/data/db:cached
+      - ./mongo-data:/data/db:cached
 
   nightscout:
     image: nightscout/cgm-remote-monitor:latest
